@@ -1,0 +1,158 @@
+{
+  "trip_id": "trip_demo_01",
+  "origin": {
+    "name": "Delhi",
+    "coordinates": [77.2090, 28.6139]
+  },
+  "destination": {
+    "name": "Manali",
+    "coordinates": [77.1887, 32.2396]
+  },
+  "start_date": "2024-06-01",
+  "end_date": "2024-06-05",
+  "days": [
+    {
+      "day_id": "day_1",
+      "date": "2024-06-01",
+      "city": "Delhi",
+      "weather": "heat",
+      "activities": [
+        {
+          "id": "act_1",
+          "name": "Explore Red Fort",
+          "type": "Activities",
+          "cost": 500,
+          "coordinates": [77.2410, 28.6562],
+          "time": "10:00 AM",
+          "rating": 4.5,
+          "crowd": "High",
+          "description": "Historic 17th-century Mughal fortress made of red sandstone."
+        }
+      ],
+      "transport_out": {
+        "mode": "Train",
+        "name": "Shatabdi Express",
+        "duration": "3h 30m",
+        "cost": 800,
+        "from_city": "Delhi",
+        "to_city": "Chandigarh"
+      }
+    },
+    {
+      "day_id": "day_2",
+      "date": "2024-06-02",
+      "city": "Chandigarh",
+      "weather": "clear",
+      "activities": [
+        {
+          "id": "act_2",
+          "name": "Rock Garden",
+          "type": "Activities",
+          "cost": 300,
+          "coordinates": [76.8028, 30.7525],
+          "time": "11:00 AM",
+          "rating": 4.8,
+          "crowd": "Medium",
+          "description": "Unique sculpture garden built entirely from industrial waste."
+        },
+        {
+          "id": "act_3",
+          "name": "Lunch at Sector 17",
+          "type": "Food",
+          "cost": 600,
+          "coordinates": [76.7867, 30.7398],
+          "time": "01:30 PM",
+          "rating": 4.2,
+          "crowd": "High",
+          "description": "Bustling plaza with great food options."
+        }
+      ],
+      "transport_out": null
+    },
+    {
+      "day_id": "day_3",
+      "date": "2024-06-03",
+      "city": "Chandigarh",
+      "weather": "pleasant",
+      "activities": [
+        {
+          "id": "act_4",
+          "name": "Sukhna Lake",
+          "type": "Activities",
+          "cost": 200,
+          "coordinates": [76.8087, 30.7421],
+          "time": "09:00 AM",
+          "rating": 4.6,
+          "crowd": "Low",
+          "description": "Peaceful reservoir perfect for morning walks."
+        }
+      ],
+      "transport_out": {
+        "mode": "Bus",
+        "name": "Volvo AC Semi-Sleeper",
+        "duration": "8h",
+        "cost": 1200,
+        "from_city": "Chandigarh",
+        "to_city": "Manali"
+      }
+    },
+    {
+      "day_id": "day_4",
+      "date": "2024-06-04",
+      "city": "Manali",
+      "weather": "cold",
+      "activities": [
+        {
+          "id": "act_5",
+          "name": "Check-in Himalayan Resort",
+          "type": "Accommodation",
+          "cost": 4000,
+          "coordinates": [77.1887, 32.2400],
+          "time": "12:00 PM",
+          "rating": 4.9,
+          "crowd": "Low",
+          "description": "Cozy stay with valley views."
+        },
+        {
+          "id": "act_6",
+          "name": "Mall Road Stroll",
+          "type": "Activities",
+          "cost": 0,
+          "coordinates": [77.1887, 32.2396],
+          "time": "05:00 PM",
+          "rating": 4.3,
+          "crowd": "High",
+          "description": "Vibrant street for shopping and street food."
+        }
+      ],
+      "transport_out": null
+    },
+    {
+      "day_id": "day_5",
+      "date": "2024-06-05",
+      "city": "Manali",
+      "weather": "cold",
+      "activities": [
+        {
+          "id": "act_7",
+          "name": "Solang Valley",
+          "type": "Activities",
+          "cost": 1500,
+          "coordinates": [77.1583, 32.3167],
+          "time": "09:00 AM",
+          "rating": 4.7,
+          "crowd": "Medium",
+          "description": "Adventure sports hub with scenic snow views."
+        }
+      ],
+      "transport_out": {
+        "mode": "Flight",
+        "name": "Kullu to Delhi",
+        "duration": "1h 20m",
+        "cost": 5000,
+        "from_city": "Manali",
+        "to_city": "Delhi"
+      }
+    }
+  ]
+}
