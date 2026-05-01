@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 import useTripStore from '../store/useTripStore';
+import PlaceIllustration from './PlaceIllustration';
 
 // Read token from local .env file - never committed to GitHub
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
