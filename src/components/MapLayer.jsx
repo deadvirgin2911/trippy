@@ -214,6 +214,27 @@ export default function MapLayer() {
   }, [selectedDayId, trip.days]);
 
   return (
-    <div ref={mapContainer} className="w-full h-full" />
-  );
+  <div ref={mapContainer} className="w-full h-full relative">
+    {/* Place illustrations overlay */}
+    <div className="absolute inset-0 pointer-events-none z-40">
+      <div style={{position: 'absolute', left: '8%', top: '80%'}}>
+        <PlaceIllustration city={trip.origin.name} size={38} />
+      </div>
+      {trip.days.map((day, idx) => (
+        <div
+          key={day.day_id}
+          style={{
+            position: 'absolute',
+            left: `${15 + 65 * idx / (trip.days.length-1)}%`,
+            top: '55%'
+          }}>
+          <PlaceIllustration city={day.city} size={38} />
+        </div>
+      ))}
+      <div style={{position: 'absolute', left: '88%', top: '15%'}}>
+        <PlaceIllustration city={trip.destination.name} size={38} />
+      </div>
+    </div>
+  </div>
+);
 }
