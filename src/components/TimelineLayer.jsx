@@ -114,11 +114,16 @@ export default function TimelineLayer() {
               onClick={() => setSelectedDay(day.day_id)}
               className={`snap-center shrink-0 w-80 h-full p-4 rounded-t-2xl border-x border-t border-white/5 transition-all cursor-pointer bg-gradient-to-b ${bgGradient} ${isSelected ? 'ring-1 ring-primary/50' : ''}`}
             >
-              <div className="flex justify-between items-center text-xs text-gray-400 uppercase tracking-widest mt-1">
-  <span>Day {index+1} • {day.city}</span>
-  <div className="flex items-center gap-2">
-    <WeatherIcon type={day.weather} size={24} />
-    <span className="capitalize">{day.weather}</span>
+              <div className="mb-4 sticky top-0 bg-background/20 backdrop-blur-sm p-2 rounded-lg -mx-2 -mt-2 z-10">
+  <h2 className="text-lg font-bold">
+    {new Date(day.date).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })}
+  </h2>
+  <div className="flex justify-between items-center text-xs text-gray-400 uppercase tracking-widest mt-1">
+    <span>Day {index + 1} • {day.city}</span>
+    <div className="flex items-center gap-2">
+      <WeatherIcon type={day.weather} size={22} />
+      <span className="capitalize">{day.weather}</span>
+    </div>
   </div>
 </div>
 
